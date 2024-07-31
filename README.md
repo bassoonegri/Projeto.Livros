@@ -1,7 +1,3 @@
-# Projeto.Livros
-Claro! Aqui está um exemplo mais completo de um README que descreve um projeto com uma API backend em C# .NET 8 e um frontend em Angular.
-
----
 
 # My Library
 
@@ -16,7 +12,7 @@ O projeto **My Library** é um sistema de gerenciamento de livros, autores e ass
 
 O repositório contém duas pastas principais:
 
-- **`my-library`**: Contém o código-fonte da API backend.
+- **`my-library`**: Contém o código-fonte da API backend e scripts relacionados.
 - **`my-library-front`**: Contém o código-fonte do frontend Angular.
 
 ## Requisitos
@@ -48,17 +44,21 @@ Antes de começar, verifique se você tem os seguintes requisitos instalados:
 
 3. **Configurar o Banco de Dados**
 
-   Atualize a string de conexão no arquivo `appsettings.json` com os detalhes do seu banco de dados.
+   - **Scripts de Banco de Dados**: Os scripts de criação e inserção de dados iniciais estão localizados na pasta `my-library/db`. Execute os scripts SQL necessários no seu banco de dados para criar as tabelas e inserir dados iniciais.
+     - `create-tables.sql`: Cria as tabelas no banco de dados.
+     - `insert-data.sql`: Insere dados iniciais nas tabelas.
 
-   ```json
-   "ConnectionStrings": {
-     "LivroDb": "Data Source=localhost;Initial Catalog=LivroDb;TrustServerCertificate=True;Persist Security Info=True;User ID=sa;Password=yourpassword"
-   }
-   ```
+   - **Atualizar String de Conexão**: Atualize a string de conexão no arquivo `appsettings.json` com os detalhes do seu banco de dados.
+
+     ```json
+     "ConnectionStrings": {
+       "LivroDb": "Data Source=localhost;Initial Catalog=LivroDb;TrustServerCertificate=True;Persist Security Info=True;User ID=sa;Password=yourpassword"
+     }
+     ```
 
 4. **Criar o Banco de Dados**
 
-   Execute as migrações e crie o banco de dados:
+   Se você optou por não usar scripts SQL diretamente, execute as migrações e crie o banco de dados:
 
    ```sh
    dotnet ef database update
@@ -123,6 +123,7 @@ Antes de começar, verifique se você tem os seguintes requisitos instalados:
 - **Models**: Contém as classes de modelo.
 - **Data**: Contém o contexto de dados e repositórios.
 - **Application**: Contém a lógica de aplicação e mapeamento.
+- **db**: Contém scripts SQL para criação e inserção de dados no banco de dados.
 - **Program.cs**: Ponto de entrada da aplicação.
 
 ### Frontend (`my-library-front`)
