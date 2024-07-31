@@ -45,8 +45,8 @@ Antes de começar, verifique se você tem os seguintes requisitos instalados:
 3. **Configurar o Banco de Dados**
 
    - **Scripts de Banco de Dados**: Os scripts de criação e inserção de dados iniciais estão localizados na pasta `my-library/db`. Execute os scripts SQL necessários no seu banco de dados para criar as tabelas e inserir dados iniciais.
-     - `create-tables.sql`: Cria as tabelas no banco de dados.
-     - `insert-data.sql`: Insere dados iniciais nas tabelas.
+     - `Script Criacao Tabelas.sql`: Cria as tabelas no banco de dados.
+     - `Script de Inserção de dados.sql`: Insere dados iniciais nas tabelas.
 
    - **Atualizar String de Conexão**: Atualize a string de conexão no arquivo `appsettings.json` com os detalhes do seu banco de dados.
 
