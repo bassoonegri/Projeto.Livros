@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../../services/api.service'; // Caminho para o serviço
-import { Livro } from '../../models/livro.model'; // Caminho para o modelo
+import { Router } from '@angular/router';
+import { ApiService } from '../../services/api.service';  
+import { Livro } from '../../models/livro.model';  
 
 @Component({
   selector: 'app-livros-list',
@@ -9,34 +10,34 @@ import { Livro } from '../../models/livro.model'; // Caminho para o modelo
 })
 export class LivrosListComponent implements OnInit {
   livros: Livro[] = [];
+  successMessage: string | null = null;
+  errorMessage: string | null = null;
 
-  constructor(private apiService: ApiService) {}
+  constructor(private livroService: ApiService, private router: Router) {}
 
   ngOnInit(): void {
     this.loadLivros();
   }
 
   loadLivros(): void {
-    this.apiService.getLivros().subscribe({
-      next: (data: Livro[]) => {
-        this.livros = data;
-      },
-      error: (err) => {
-        console.error('Erro ao carregar livros', err);
-      }
-    });
+    this.livroService.getLivros().subscribe(
+      (livros) => (this.livros = livros),
+      (error) => console.error('Erro ao carregar livros', error)
+    );
   }
 
-  deleteLivro(codl: number): void {
-    if (confirm('Tem certeza que deseja excluir este livro?')) {
-      this.apiService.deleteLivro(codl).subscribe({
-        next: () => {
-          this.livros = this.livros.filter(l => l.codl !== codl);
+  deleteLivro(codigo: number): void {
+    if (confirm('Tem certeza de que deseja excluir este livro?')) {
+      this.livroService.deleteLivro(codigo).subscribe(
+        () => {
+          this.successMessage = 'Livro excluído com sucesso!';
+          this.loadLivros(); // Recarregar a lista de livros
         },
-        error: (err) => {
-          console.error('Erro ao excluir livro', err);
+        (error) => {
+          this.errorMessage = 'Erro ao excluir livro';
+          console.error('Erro ao excluir livro', error);
         }
-      });
+      );
     }
   }
 }

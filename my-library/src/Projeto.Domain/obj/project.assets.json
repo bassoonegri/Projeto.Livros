@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documentos Pessoais\\Projetos\\Basis\\my-library\\src\\Projeto.Domain\\Projeto.Domain.csproj",
+      "projectUniqueName": "D:\\Projetos\\Basis\\Projeto\\Projeto.Livros\\my-library\\src\\Projeto.Domain\\Projeto.Domain.csproj",
       "projectName": "Projeto.Domain",
-      "projectPath": "D:\\Documentos Pessoais\\Projetos\\Basis\\my-library\\src\\Projeto.Domain\\Projeto.Domain.csproj",
+      "projectPath": "D:\\Projetos\\Basis\\Projeto\\Projeto.Livros\\my-library\\src\\Projeto.Domain\\Projeto.Domain.csproj",
       "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "D:\\Documentos Pessoais\\Projetos\\Basis\\my-library\\src\\Projeto.Domain\\obj\\",
+      "outputPath": "D:\\Projetos\\Basis\\Projeto\\Projeto.Livros\\my-library\\src\\Projeto.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

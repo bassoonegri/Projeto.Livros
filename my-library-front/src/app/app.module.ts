@@ -18,7 +18,11 @@ import { LivrosCreateComponent } from './livros/livros-create/livros-create.comp
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+
   { path: 'livros', component: LivrosListComponent },
+  { path: 'livros/create', component: LivrosCreateComponent },
+  { path: 'livros/edit/:id', component: LivrosCreateComponent },
+
   { path: 'autores', component: AutoresListComponent },
   { path: 'assuntos', component: AssuntosListComponent }
 ];
@@ -27,13 +31,16 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    LivrosComponent,
+    
     AutoresComponent,
+    AutoresCreateComponent,
+    AutoresListComponent,
+
     AssuntosComponent,
     AssuntosListComponent,
     AssuntosCreateComponent,
-    AutoresCreateComponent,
-    AutoresListComponent,
+
+    LivrosComponent,
     LivrosListComponent,
     LivrosCreateComponent
   ],

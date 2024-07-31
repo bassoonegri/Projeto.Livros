@@ -6,7 +6,7 @@ public interface ILivroRepository
 {
     Task<IEnumerable<Livro>> GetAll(CancellationToken cancellationToken);
 
-    Task<Livro> Create(Livro livro);
+    Task<Livro> CreateAsync(Livro livro);
 
     Task<Livro?> Get(int codigo, CancellationToken cancellationToken);
 

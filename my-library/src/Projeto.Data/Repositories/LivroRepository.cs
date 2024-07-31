@@ -22,7 +22,7 @@ public class LivroRepository : ILivroRepository
 
     public async Task<Livro?> GetByNome(string titulo, CancellationToken cancellationToken)
     {
-        return await _context.Livros.FirstOrDefaultAsync(n => n.Titulo == titulo, cancellationToken);
+        return await _context.Livros.AsNoTracking().FirstOrDefaultAsync(n => n.Titulo == titulo, cancellationToken);
     }
 
     public async Task<Livro?> Get(int id, CancellationToken cancellationToken)
@@ -30,11 +30,11 @@ public class LivroRepository : ILivroRepository
         return await _context.Livros.FindAsync(new object[] { id }, cancellationToken);
     }
 
-    public async Task<Livro> Create(Livro livro)
+    public async Task<Livro> CreateAsync(Livro livro)
     {
         _context.Livros.Add(livro);
         await _context.SaveChangesAsync();
-        return livro; // Retorne o livro criado com seu ID gerado
+        return livro;
     }
 
     public void Update(Livro livro)

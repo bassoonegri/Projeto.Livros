@@ -1,35 +1,35 @@
 -- Inserir dados na tabela Livro
-INSERT INTO dbo.Livro (Codl, Titulo, Editora, Edicao, AnoPublicacao) VALUES
-(1, 'Aprendendo SQL Server', 'Editora ABC', 1, '2023'),
-(2, 'Desenvolvimento Web com ASP.NET', 'Editora XYZ', 2, '2022'),
-(3, 'Programação C# Avançada', 'Editora DEF', 3, '2024'),
-(4, 'Introdução ao Desenvolvimento de Software', 'Editora GHI', 1, '2021'),
-(5, 'Estruturas de Dados em C#', 'Editora JKL', 2, '2023'),
-(6, 'Design Patterns em .NET', 'Editora MNO', 1, '2022'),
-(7, 'Algoritmos e Lógica de Programação', 'Editora PQR', 3, '2024'),
-(8, 'C# e SQL Server', 'Editora STU', 1, '2023');
+INSERT INTO dbo.Livro ( Titulo, Editora, Edicao, AnoPublicacao) VALUES
+('Aprendendo SQL Server', 'Editora ABC', 1, '2023'),
+('Desenvolvimento Web com ASP.NET', 'Editora XYZ', 2, '2022'),
+('Programação C# Avançada', 'Editora DEF', 3, '2024'),
+('Introdução ao Desenvolvimento de Software', 'Editora GHI', 1, '2021'),
+('Estruturas de Dados em C#', 'Editora JKL', 2, '2023'),
+('Design Patterns em .NET', 'Editora MNO', 1, '2022'),
+('Algoritmos e Lógica de Programação', 'Editora PQR', 3, '2024'),
+('C# e SQL Server', 'Editora STU', 1, '2023');
 
 -- Inserir dados na tabela Autor
-INSERT INTO dbo.Autor (CodAu, Nome) VALUES
-(1, 'João da Silva'),
-(2, 'Maria Oliveira'),
-(3, 'Pedro Santos'),
-(4, 'Ana Costa'),
-(5, 'Carlos Pereira'),
-(6, 'Juliana Lima'),
-(7, 'Ricardo Almeida'),
-(8, 'Luciana Ferreira');
+INSERT INTO dbo.Autor ( Nome) VALUES
+('João da Silva'),
+('Maria Oliveira'),
+('Pedro Santos'),
+('Ana Costa'),
+('Carlos Pereira'),
+('Juliana Lima'),
+('Ricardo Almeida'),
+('Luciana Ferreira');
 
 -- Inserir dados na tabela Assunto
-INSERT INTO dbo.Assunto (codAs, Descricao) VALUES
-(1, 'Banco de Dados'),
-(2, 'Desenvolvimento Web'),
-(3, 'Programação'),
-(4, 'Arquitetura de Software'),
-(5, 'Algoritmos'),
-(6, 'Lógica de Programação'),
-(7, 'Desenvolvimento de Sistemas'),
-(8, 'Programação Orientada a Objetos');
+INSERT INTO dbo.Assunto ( Descricao) VALUES
+('Banco de Dados'),
+('Desenvolvimento Web'),
+('Programação'),
+('Arquitetura de Software'),
+('Algoritmos'),
+('Lógica de Programação'),
+('Desenvolvimento de Sistemas'),
+('Programação Orientada a Objetos');
 
 -- Inserir dados na tabela Livro_Autor
 INSERT INTO dbo.Livro_Autor (Livro_Codl, Autor_CodAu) VALUES

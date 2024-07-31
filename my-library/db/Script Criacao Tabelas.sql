@@ -9,7 +9,7 @@ IF OBJECT_ID('dbo.Assunto', 'U') IS NOT NULL DROP TABLE dbo.Assunto;
 
 -- Criação da tabela Livro
 CREATE TABLE dbo.Livro (
-    Codl INT PRIMARY KEY,
+    Codl INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
     Titulo VARCHAR(100) NOT NULL,   -- Aumentar o tamanho para comportar títulos maiores
     Editora VARCHAR(40) NOT NULL,
     Edicao INT NOT NULL,
@@ -18,13 +18,13 @@ CREATE TABLE dbo.Livro (
 
 -- Criação da tabela Autor
 CREATE TABLE dbo.Autor (
-    CodAu INT PRIMARY KEY,
+    CodAu INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
     Nome VARCHAR(40) NOT NULL
 );
 
 -- Criação da tabela Assunto
 CREATE TABLE dbo.Assunto (
-    codAs INT PRIMARY KEY,
+    CodAs INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
     Descricao VARCHAR(50) NOT NULL   -- Aumentar o tamanho para comportar descrições maiores
 );
 

@@ -14,16 +14,26 @@ public class CreateLivroHandler(IUnitOfWork unitOfWork, ILivroRepository LivroRe
 
     public async Task<LivroResponse> Handle(CreateLivroRequest request, CancellationToken cancellationToken)
     {
-        await TaskAlreadyRegistered(request, cancellationToken);
+        try
+        {
+            await TaskAlreadyRegistered(request, cancellationToken);
 
-        var entity = _mapper.Map<Livro>(request);
+            var entity = _mapper.Map<Livro>(request);
 
-        _LivroRepository.Create(entity);
+            var createdEntity = await _LivroRepository.CreateAsync(entity);
 
-        await _unitOfWork.Commit(cancellationToken);
+            await _unitOfWork.Commit(cancellationToken);
 
-        return _mapper.Map<LivroResponse>(entity);
+            return _mapper.Map<LivroResponse>(createdEntity);
+        }
+        catch (Exception ex)
+        {
+            // Adicione logging da exceção para depuração
+            throw; // Re-lançar a exceção para tratamento em nível superior
+        }
     }
+
+
 
     private async Task TaskAlreadyRegistered(CreateLivroRequest request, CancellationToken cancellationToken)
     {

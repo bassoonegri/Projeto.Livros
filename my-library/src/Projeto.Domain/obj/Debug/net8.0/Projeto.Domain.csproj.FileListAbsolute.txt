@@ -9,3 +9,15 @@ D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Domain\obj\Debug\ne
 D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Domain\obj\Debug\net8.0\refint\Projeto.Domain.dll
 D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Domain\obj\Debug\net8.0\Projeto.Domain.pdb
 D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Domain\obj\Debug\net8.0\ref\Projeto.Domain.dll
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Domain\bin\Debug\net8.0\Projeto.Domain.deps.json
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Domain\bin\Debug\net8.0\Projeto.Domain.dll
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Domain\bin\Debug\net8.0\Projeto.Domain.pdb
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Domain\obj\Debug\net8.0\Projeto.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Domain\obj\Debug\net8.0\Projeto.Domain.AssemblyInfoInputs.cache
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Domain\obj\Debug\net8.0\Projeto.Domain.AssemblyInfo.cs
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Domain\obj\Debug\net8.0\Projeto.Domain.csproj.CoreCompileInputs.cache
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Domain\obj\Debug\net8.0\Projeto.Domain.sourcelink.json
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Domain\obj\Debug\net8.0\Projeto.Domain.dll
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Domain\obj\Debug\net8.0\refint\Projeto.Domain.dll
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Domain\obj\Debug\net8.0\Projeto.Domain.pdb
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Domain\obj\Debug\net8.0\ref\Projeto.Domain.dll

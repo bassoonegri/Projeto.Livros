@@ -1,5 +1,5 @@
 export interface Livro {
-    codl: number;
+    codigo: number;
     titulo: string;
     editora: string;
     edicao: number;

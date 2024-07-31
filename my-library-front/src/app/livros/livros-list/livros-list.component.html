@@ -16,6 +16,16 @@
     </a>
   </div>
 
+  <!-- Mensagens de Sucesso e Erro -->
+  <div *ngIf="successMessage" class="alert alert-success alert-dismissible fade show" role="alert">
+    {{ successMessage }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <div *ngIf="errorMessage" class="alert alert-danger alert-dismissible fade show" role="alert">
+    {{ errorMessage }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
   <!-- Grid de Livros -->
   <div *ngIf="livros.length > 0" class="row">
     <div class="col-md-4 mb-4" *ngFor="let livro of livros">
@@ -24,8 +34,8 @@
           <h5 class="card-title">{{ livro.titulo }}</h5>
           <h6 class="card-subtitle mb-2 text-muted">{{ livro.editora }}</h6>
           <p class="card-text">Ano de Publicação: {{ livro.anoPublicacao }}</p>
-          <a routerLink="/livros/edit/{{ livro.codl }}" class="btn btn-secondary btn-sm me-2">Editar</a>
-          <button (click)="deleteLivro(livro.codl)" class="btn btn-danger btn-sm">Excluir</button>
+          <a routerLink="/livros/edit/{{ livro.codigo }}" class="btn btn-secondary btn-sm me-2">Editar</a>
+          <button (click)="deleteLivro(livro.codigo)" class="btn btn-danger btn-sm">Excluir</button>
         </div>
       </div>
     </div>

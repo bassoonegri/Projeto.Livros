@@ -27,7 +27,7 @@ export class ApiService {
   }
 
   updateLivro(livro: Livro): Observable<Livro> {
-    return this.http.put<Livro>(`${this.baseUrl}/livro/${livro.codl}`, livro);
+    return this.http.put<Livro>(`${this.baseUrl}/livro/${livro.codigo}`, livro);
   }
 
   deleteLivro(id: number): Observable<void> {

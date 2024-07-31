@@ -13,3 +13,19 @@ D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Application\obj\Deb
 D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Application\obj\Debug\net8.0\refint\Projeto.Application.dll
 D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Application\obj\Debug\net8.0\Projeto.Application.pdb
 D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Application\obj\Debug\net8.0\ref\Projeto.Application.dll
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Application\bin\Debug\net8.0\Projeto.Application.deps.json
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Application\bin\Debug\net8.0\Projeto.Application.dll
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Application\bin\Debug\net8.0\Projeto.Application.pdb
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Application\bin\Debug\net8.0\Projeto.Domain.dll
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Application\bin\Debug\net8.0\Projeto.Domain.pdb
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Application\obj\Debug\net8.0\Projeto.Application.csproj.AssemblyReference.cache
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Application\obj\Debug\net8.0\Projeto.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Application\obj\Debug\net8.0\Projeto.Application.AssemblyInfoInputs.cache
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Application\obj\Debug\net8.0\Projeto.Application.AssemblyInfo.cs
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Application\obj\Debug\net8.0\Projeto.Application.csproj.CoreCompileInputs.cache
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Application\obj\Debug\net8.0\Projeto.Application.sourcelink.json
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Application\obj\Debug\net8.0\Projeto..C3B4A669.Up2Date
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Application\obj\Debug\net8.0\Projeto.Application.dll
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Application\obj\Debug\net8.0\refint\Projeto.Application.dll
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Application\obj\Debug\net8.0\Projeto.Application.pdb
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\src\Projeto.Application\obj\Debug\net8.0\ref\Projeto.Application.dll

@@ -60,24 +60,34 @@ public class ContextoBd : DbContext
         // Configuração da entidade Livro
         modelBuilder.Entity<Livro>(entity =>
         {
-            entity.ToTable("Livro", "dbo"); // Mapeia para a tabela dbo.Livro
+            entity.ToTable("Livro", "dbo");
+
             entity.HasKey(e => e.Codl);
 
             entity.Property(e => e.Codl)
-                .HasColumnName("Codl");
+                .HasColumnName("Codl")
+                .ValueGeneratedOnAdd(); // Indica que o valor será gerado pelo banco de dados (auto-incremento)
 
             entity.Property(e => e.Titulo)
-                .HasColumnName("Titulo");
+                .HasColumnName("Titulo")
+                .HasMaxLength(40) // Define o comprimento máximo da coluna
+                .IsRequired(); // Define que a coluna é obrigatória
 
             entity.Property(e => e.Editora)
-                .HasColumnName("Editora");
+                .HasColumnName("Editora")
+                .HasMaxLength(40) // Define o comprimento máximo da coluna
+                .IsRequired(); // Define que a coluna é obrigatória
 
             entity.Property(e => e.Edicao)
-                .HasColumnName("Edicao");
+                .HasColumnName("Edicao")
+                .IsRequired(); // Define que a coluna é obrigatória
 
             entity.Property(e => e.AnoPublicacao)
-                .HasColumnName("AnoPublicacao");
+                .HasColumnName("AnoPublicacao")
+                .HasMaxLength(4) // Define o comprimento máximo da coluna
+                .IsRequired(); // Define que a coluna é obrigatória
         });
+
     }
 
 

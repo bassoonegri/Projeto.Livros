@@ -8,7 +8,7 @@ import { Livro } from '../models/livro.model';
   styleUrls: ['./livros.component.css']
 })
 export class LivrosComponent implements OnInit {
-  livro: Livro = { codl: 0, titulo: '', editora: '', edicao: 0, anoPublicacao: '' };
+  livro: Livro = { codigo: 0, titulo: '', editora: '', edicao: 0, anoPublicacao: '' };
   livros: Livro[] = [];
 
   constructor(private apiService: ApiService) { }
@@ -22,7 +22,7 @@ export class LivrosComponent implements OnInit {
   }
 
   onSubmit(): void {
-    if (this.livro.codl) {
+    if (this.livro.codigo) {
       this.apiService.updateLivro(this.livro).subscribe(() => this.loadLivros());
     } else {
       this.apiService.createLivro(this.livro).subscribe(() => this.loadLivros());
@@ -39,6 +39,6 @@ export class LivrosComponent implements OnInit {
   }
 
   resetForm(): void {
-    this.livro = { codl: 0, titulo: '', editora: '', edicao: 0, anoPublicacao: '' };
+    this.livro = { codigo: 0, titulo: '', editora: '', edicao: 0, anoPublicacao: '' };
   }
 }

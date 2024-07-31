@@ -1,2 +1,10 @@
-# Ignore Visual Studio files
+# Visual Studio
 .vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Outros arquivos temporários
+*.log
+*.tmp

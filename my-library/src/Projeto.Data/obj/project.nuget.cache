@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JN4e3vIh4uM=",
+  "dgSpecHash": "D7kH4YFl74E=",
   "success": true,
-  "projectFilePath": "D:\\Documentos Pessoais\\Projetos\\Basis\\my-library\\src\\Projeto.Data\\Projeto.Data.csproj",
+  "projectFilePath": "D:\\Projetos\\Basis\\Projeto\\Projeto.Livros\\my-library\\src\\Projeto.Data\\Projeto.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dell\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

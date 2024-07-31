@@ -3853,11 +3853,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documentos Pessoais\\Projetos\\Basis\\my-library\\src\\Projeto.Api\\Projeto.Api.csproj",
+      "projectUniqueName": "D:\\Projetos\\Basis\\Projeto\\Projeto.Livros\\my-library\\src\\Projeto.Api\\Projeto.Api.csproj",
       "projectName": "Projeto.Api",
-      "projectPath": "D:\\Documentos Pessoais\\Projetos\\Basis\\my-library\\src\\Projeto.Api\\Projeto.Api.csproj",
+      "projectPath": "D:\\Projetos\\Basis\\Projeto\\Projeto.Livros\\my-library\\src\\Projeto.Api\\Projeto.Api.csproj",
       "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "D:\\Documentos Pessoais\\Projetos\\Basis\\my-library\\src\\Projeto.Api\\obj\\",
+      "outputPath": "D:\\Projetos\\Basis\\Projeto\\Projeto.Livros\\my-library\\src\\Projeto.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3879,11 +3879,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Documentos Pessoais\\Projetos\\Basis\\my-library\\src\\Projeto.Application\\Projeto.Application.csproj": {
-              "projectPath": "D:\\Documentos Pessoais\\Projetos\\Basis\\my-library\\src\\Projeto.Application\\Projeto.Application.csproj"
+            "D:\\Projetos\\Basis\\Projeto\\Projeto.Livros\\my-library\\src\\Projeto.Application\\Projeto.Application.csproj": {
+              "projectPath": "D:\\Projetos\\Basis\\Projeto\\Projeto.Livros\\my-library\\src\\Projeto.Application\\Projeto.Application.csproj"
             },
-            "D:\\Documentos Pessoais\\Projetos\\Basis\\my-library\\src\\Projeto.Data\\Projeto.Data.csproj": {
-              "projectPath": "D:\\Documentos Pessoais\\Projetos\\Basis\\my-library\\src\\Projeto.Data\\Projeto.Data.csproj"
+            "D:\\Projetos\\Basis\\Projeto\\Projeto.Livros\\my-library\\src\\Projeto.Data\\Projeto.Data.csproj": {
+              "projectPath": "D:\\Projetos\\Basis\\Projeto\\Projeto.Livros\\my-library\\src\\Projeto.Data\\Projeto.Data.csproj"
             }
           }
         }
