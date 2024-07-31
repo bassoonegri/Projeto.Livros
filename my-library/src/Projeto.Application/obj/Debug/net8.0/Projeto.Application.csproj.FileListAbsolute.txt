@@ -1,0 +1,15 @@
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Application\obj\Debug\net8.0\Projeto.Application.csproj.AssemblyReference.cache
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Application\obj\Debug\net8.0\Projeto.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Application\obj\Debug\net8.0\Projeto.Application.AssemblyInfoInputs.cache
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Application\obj\Debug\net8.0\Projeto.Application.AssemblyInfo.cs
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Application\obj\Debug\net8.0\Projeto.Application.csproj.CoreCompileInputs.cache
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Application\bin\Debug\net8.0\Projeto.Application.deps.json
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Application\bin\Debug\net8.0\Projeto.Application.dll
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Application\bin\Debug\net8.0\Projeto.Application.pdb
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Application\bin\Debug\net8.0\Projeto.Domain.dll
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Application\bin\Debug\net8.0\Projeto.Domain.pdb
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Application\obj\Debug\net8.0\Projeto..C3B4A669.Up2Date
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Application\obj\Debug\net8.0\Projeto.Application.dll
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Application\obj\Debug\net8.0\refint\Projeto.Application.dll
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Application\obj\Debug\net8.0\Projeto.Application.pdb
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Application\obj\Debug\net8.0\ref\Projeto.Application.dll

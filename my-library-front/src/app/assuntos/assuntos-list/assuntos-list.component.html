@@ -1,0 +1,41 @@
+<div class="container mt-4">
+  <!-- Botão de Retorno à Página Inicial -->
+  <div class="mb-3">
+    <a routerLink="/" class="btn btn-secondary">
+      <i class="bi bi-arrow-left"></i> Voltar para a Home
+    </a>
+  </div>
+
+  <!-- Título da Página -->
+  <h2>Lista de Assuntos</h2>
+  
+  <!-- Botão para Adicionar Novo Assunto -->
+  <div class="mb-3">
+    <a routerLink="/assuntos/create" class="btn btn-primary">
+      <i class="bi bi-plus-circle"></i> Adicionar Novo Assunto
+    </a>
+  </div>
+
+  <!-- Grid de Assuntos -->
+  <div *ngIf="assuntos.length > 0" class="row">
+    <div class="col-md-4 mb-4" *ngFor="let assunto of assuntos">
+      <div class="card">
+        <div class="card-body d-flex align-items-center">
+          <!-- Ícone de Assunto -->
+          <i class="bi bi-tag me-3" style="font-size: 2rem;"></i>
+          <!-- Conteúdo do Card -->
+          <div>
+            <h5 class="card-title">{{ assunto.descricao }}</h5>
+            <a routerLink="/assuntos/edit/{{ assunto.codAs }}" class="btn btn-secondary btn-sm me-2">Editar</a>
+            <button (click)="deleteAssunto(assunto.codAs)" class="btn btn-danger btn-sm">Excluir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mensagem quando nenhum assunto é encontrado -->
+  <div *ngIf="assuntos.length === 0">
+    <p>Nenhum assunto encontrado.</p>
+  </div>
+</div>

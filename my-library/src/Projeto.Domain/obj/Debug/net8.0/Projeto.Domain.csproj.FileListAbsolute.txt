@@ -1,0 +1,11 @@
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Domain\bin\Debug\net8.0\Projeto.Domain.deps.json
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Domain\bin\Debug\net8.0\Projeto.Domain.dll
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Domain\bin\Debug\net8.0\Projeto.Domain.pdb
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Domain\obj\Debug\net8.0\Projeto.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Domain\obj\Debug\net8.0\Projeto.Domain.AssemblyInfoInputs.cache
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Domain\obj\Debug\net8.0\Projeto.Domain.AssemblyInfo.cs
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Domain\obj\Debug\net8.0\Projeto.Domain.csproj.CoreCompileInputs.cache
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Domain\obj\Debug\net8.0\Projeto.Domain.dll
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Domain\obj\Debug\net8.0\refint\Projeto.Domain.dll
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Domain\obj\Debug\net8.0\Projeto.Domain.pdb
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Domain\obj\Debug\net8.0\ref\Projeto.Domain.dll

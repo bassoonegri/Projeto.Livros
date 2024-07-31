@@ -1,0 +1,41 @@
+<div class="container mt-4">
+  <!-- Botão de Retorno à Página Inicial -->
+  <div class="mb-3">
+    <a routerLink="/" class="btn btn-secondary">
+      <i class="bi bi-arrow-left"></i> Voltar para a Home
+    </a>
+  </div>
+
+  <!-- Título da Página -->
+  <h2>Lista de Autores</h2>
+  
+  <!-- Botão para Adicionar Novo Autor -->
+  <div class="mb-3">
+    <a routerLink="/autores/create" class="btn btn-primary">
+      <i class="bi bi-plus-circle"></i> Adicionar Novo Autor
+    </a>
+  </div>
+
+  <!-- Grid de Autores -->
+  <div *ngIf="autores.length > 0" class="row">
+    <div class="col-md-4 mb-4" *ngFor="let autor of autores">
+      <div class="card">
+        <div class="card-body d-flex align-items-center">
+          <!-- Ícone de Pessoa -->
+          <i class="bi bi-person-circle me-3" style="font-size: 2rem;"></i>
+          <!-- Conteúdo do Card -->
+          <div>
+            <h5 class="card-title">{{ autor.nome }}</h5>
+            <a routerLink="/autores/edit/{{ autor.codAu }}" class="btn btn-secondary btn-sm me-2">Editar</a>
+            <button (click)="deleteAutor(autor.codAu)" class="btn btn-danger btn-sm">Excluir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mensagem quando nenhum autor é encontrado -->
+  <div *ngIf="autores.length === 0">
+    <p>Nenhum autor encontrado.</p>
+  </div>
+</div>

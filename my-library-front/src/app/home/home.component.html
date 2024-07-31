@@ -1,0 +1,17 @@
+<div class="container mt-4">
+  <!-- Título da Página -->
+  <h1 class="text-center mb-4">Bem-vindo à Gestão de Livros, Autores e Assuntos</h1>
+
+  <!-- Cards de Navegação -->
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let item of cards">
+      <div class="card" (click)="navigateTo(item.route)">
+        <img [src]="item.image" alt="{{ item.title }} image" class="card-img-top">
+        <div class="card-body">
+          <h2 class="card-title">{{ item.title }}</h2>
+          <p class="card-text">{{ item.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

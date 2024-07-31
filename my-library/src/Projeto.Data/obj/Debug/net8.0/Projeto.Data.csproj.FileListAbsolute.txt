@@ -1,0 +1,17 @@
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Data\obj\Debug\net8.0\Projeto.Data.csproj.AssemblyReference.cache
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Data\obj\Debug\net8.0\Projeto.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Data\obj\Debug\net8.0\Projeto.Data.AssemblyInfoInputs.cache
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Data\obj\Debug\net8.0\Projeto.Data.AssemblyInfo.cs
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Data\obj\Debug\net8.0\Projeto.Data.csproj.CoreCompileInputs.cache
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Data\bin\Debug\net8.0\Projeto.Data.deps.json
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Data\bin\Debug\net8.0\Projeto.Data.dll
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Data\bin\Debug\net8.0\Projeto.Data.pdb
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Data\bin\Debug\net8.0\Projeto.Application.dll
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Data\bin\Debug\net8.0\Projeto.Domain.dll
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Data\bin\Debug\net8.0\Projeto.Application.pdb
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Data\bin\Debug\net8.0\Projeto.Domain.pdb
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Data\obj\Debug\net8.0\Projeto..99F3A27C.Up2Date
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Data\obj\Debug\net8.0\Projeto.Data.dll
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Data\obj\Debug\net8.0\refint\Projeto.Data.dll
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Data\obj\Debug\net8.0\Projeto.Data.pdb
+D:\Documentos Pessoais\Projetos\Basis\my-library\src\Projeto.Data\obj\Debug\net8.0\ref\Projeto.Data.dll

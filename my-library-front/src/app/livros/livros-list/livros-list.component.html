@@ -1,0 +1,38 @@
+<div class="container mt-4">
+  <!-- Botão de Retorno à Página Inicial -->
+  <div class="mb-3">
+    <a routerLink="/" class="btn btn-secondary">
+      <i class="bi bi-arrow-left"></i> Voltar para a Home
+    </a>
+  </div>
+
+  <!-- Título da Página -->
+  <h2>Lista de Livros</h2>
+  
+  <!-- Botão para Adicionar Novo Livro -->
+  <div class="mb-3">
+    <a routerLink="/livros/create" class="btn btn-primary">
+      <i class="bi bi-plus-circle"></i> Adicionar Novo Livro
+    </a>
+  </div>
+
+  <!-- Grid de Livros -->
+  <div *ngIf="livros.length > 0" class="row">
+    <div class="col-md-4 mb-4" *ngFor="let livro of livros">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ livro.titulo }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{ livro.editora }}</h6>
+          <p class="card-text">Ano de Publicação: {{ livro.anoPublicacao }}</p>
+          <a routerLink="/livros/edit/{{ livro.codl }}" class="btn btn-secondary btn-sm me-2">Editar</a>
+          <button (click)="deleteLivro(livro.codl)" class="btn btn-danger btn-sm">Excluir</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mensagem quando nenhum livro é encontrado -->
+  <div *ngIf="livros.length === 0">
+    <p>Nenhum livro encontrado.</p>
+  </div>
+</div>
