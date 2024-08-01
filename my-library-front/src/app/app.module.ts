@@ -14,7 +14,8 @@ import { AutoresCreateComponent } from './autores/autores-create/autores-create.
 import { AutoresListComponent } from './autores/autores-list/autores-list.component';
 import { LivrosListComponent } from './livros/livros-list/livros-list.component';
 import { LivrosCreateComponent } from './livros/livros-create/livros-create.component';
-import { LivrosRelatorioComponent } from './reports/livros-relatorio/livros-relatorio.component'; 
+import { LivrosRelatorioComponent } from './reports/livros-relatorio/livros-relatorio.component';
+import { FooterComponent } from './footer/footer.component'; 
 
 
 const routes: Routes = [
@@ -51,7 +52,8 @@ const routes: Routes = [
     LivrosComponent,
     LivrosListComponent,
     LivrosCreateComponent,
-    LivrosRelatorioComponent
+    LivrosRelatorioComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

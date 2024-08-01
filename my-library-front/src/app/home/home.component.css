@@ -1,39 +1,53 @@
-/* Estilo para a centralização do container */
-.container {
-  max-width: 1200px; /* Define a largura máxima do container */
-  margin: 0 auto; /* Centraliza o container horizontalmente */
+.page-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para o título da página */
-h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-/* Estilo para os cards */
 .card {
-  cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
-  transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao card */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo para a imagem do card */
 .card-img-top {
-  height: 200px;
-  object-fit: cover; /* Faz a imagem cobrir o espaço do card */
+  border-bottom: 1px solid #ddd;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
-/* Estilo para o título do card */
+.card-body {
+  background-color: #f8f9fa;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
 .card-title {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #007bff;
 }
 
-/* Estilo para a descrição do card */
 .card-text {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  border-radius: 0.25rem;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
 }
