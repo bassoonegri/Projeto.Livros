@@ -1,0 +1,14 @@
+/* src/app/livros-relatorio/livros-relatorio.component.css */
+.table {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .table th, .table td {
+    text-align: center;
+  }
+  
+  .alert {
+    margin-top: 20px;
+  }
+  

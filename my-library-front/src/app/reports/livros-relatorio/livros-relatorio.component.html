@@ -1,0 +1,49 @@
+<!-- src/app/livros-relatorio/livros-relatorio.component.html -->
+<div class="container mt-4">
+    <h2>Relatório de Livros</h2>
+  
+    <!-- Botão de Retorno à Página de Listagem -->
+    <div class="mb-4">
+      <a routerLink="/livros" class="btn btn-secondary">
+        <i class="bi bi-arrow-left"></i> Voltar para a Listagem de Livros
+      </a>
+    </div>
+  
+    <!-- Botão de Impressão -->
+    <div class="mb-4">
+      <button (click)="print()" class="btn btn-info">
+        <i class="bi bi-printer"></i> Imprimir Relatório
+      </button>
+    </div>
+  
+    <!-- Mensagem de Carregamento -->
+    <div *ngIf="isLoading" class="alert alert-info">
+      Carregando dados...
+    </div>
+  
+    <!-- Mensagem de Erro -->
+    <div *ngIf="errorMessage" class="alert alert-danger">
+      {{ errorMessage }}
+    </div>
+  
+    <!-- Tabela de Livros -->
+    <table *ngIf="!isLoading && !errorMessage" class="table table-striped">
+      <thead>
+        <tr>
+          <th>Título</th>
+          <th>Editora</th>
+          <th>Edição</th>
+          <th>Ano de Publicação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let livro of livros">
+          <td>{{ livro.titulo }}</td>
+          <td>{{ livro.editora }}</td>
+          <td>{{ livro.edicao }}</td>
+          <td>{{ livro.anoPublicacao }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
