@@ -13,7 +13,8 @@ import { AssuntosCreateComponent } from './assuntos/assuntos-create/assuntos-cre
 import { AutoresCreateComponent } from './autores/autores-create/autores-create.component';
 import { AutoresListComponent } from './autores/autores-list/autores-list.component';
 import { LivrosListComponent } from './livros/livros-list/livros-list.component';
-import { LivrosCreateComponent } from './livros/livros-create/livros-create.component'; 
+import { LivrosCreateComponent } from './livros/livros-create/livros-create.component';
+import { LivrosRelatorioComponent } from './reports/livros-relatorio/livros-relatorio.component'; 
 
 
 const routes: Routes = [
@@ -23,8 +24,15 @@ const routes: Routes = [
   { path: 'livros/create', component: LivrosCreateComponent },
   { path: 'livros/edit/:id', component: LivrosCreateComponent },
 
-  { path: 'autores', component: AutoresListComponent },
-  { path: 'assuntos', component: AssuntosListComponent }
+  { path: 'autores', component: AutoresListComponent },  
+  { path: 'autores/create', component: AutoresCreateComponent },
+  { path: 'autores/edit/:id', component: AutoresCreateComponent },
+
+  { path: 'assuntos', component: AssuntosListComponent },
+  { path: 'assuntos/create', component: AssuntosCreateComponent },
+  { path: 'assuntos/edit/:id', component: AssuntosCreateComponent },
+
+  { path: 'relatorios', component: LivrosRelatorioComponent },
 ];
 
 @NgModule({
@@ -42,7 +50,8 @@ const routes: Routes = [
 
     LivrosComponent,
     LivrosListComponent,
-    LivrosCreateComponent
+    LivrosCreateComponent,
+    LivrosRelatorioComponent
   ],
   imports: [
     BrowserModule,

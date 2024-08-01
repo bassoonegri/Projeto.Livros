@@ -1,0 +1,19 @@
+/* Adiciona um espaçamento adequado entre a mensagem e o formulário */
+.alert {
+    margin-bottom: 20px;
+  }
+  
+  /* Alinha os botões do formulário no final da área do formulário */
+  .d-flex {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .btn-secondary {
+    margin-left: 10px;
+  }
+  
+  .btn-primary {
+    margin-right: 10px;
+  }
+  

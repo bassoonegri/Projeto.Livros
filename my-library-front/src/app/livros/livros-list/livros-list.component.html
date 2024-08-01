@@ -29,7 +29,7 @@
   <!-- Grid de Livros -->
   <div *ngIf="livros.length > 0" class="row">
     <div class="col-md-4 mb-4" *ngFor="let livro of livros">
-      <div class="card">
+      <div class="card card-shadow">
         <div class="card-body">
           <h5 class="card-title">{{ livro.titulo }}</h5>
           <h6 class="card-subtitle mb-2 text-muted">{{ livro.editora }}</h6>

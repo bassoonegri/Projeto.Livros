@@ -1,3 +1,4 @@
+<!-- src/app/assuntos/assuntos-list/assuntos-list.component.html -->
 <div class="container mt-4">
   <!-- Botão de Retorno à Página Inicial -->
   <div class="mb-3">
@@ -16,10 +17,20 @@
     </a>
   </div>
 
+  <!-- Mensagens de Sucesso e Erro -->
+  <div *ngIf="successMessage" class="alert alert-success alert-dismissible fade show" role="alert">
+    {{ successMessage }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <div *ngIf="errorMessage" class="alert alert-danger alert-dismissible fade show" role="alert">
+    {{ errorMessage }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
   <!-- Grid de Assuntos -->
   <div *ngIf="assuntos.length > 0" class="row">
     <div class="col-md-4 mb-4" *ngFor="let assunto of assuntos">
-      <div class="card">
+      <div class="card card-shadow">
         <div class="card-body d-flex align-items-center">
           <!-- Ícone de Assunto -->
           <i class="bi bi-tag me-3" style="font-size: 2rem;"></i>

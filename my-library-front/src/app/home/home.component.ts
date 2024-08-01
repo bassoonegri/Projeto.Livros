@@ -11,20 +11,26 @@ export class HomeComponent {
     {
       title: 'Livros',
       description: 'Gerencie seus livros',
-      image: 'assets/livros.jpg', // Substitua com o caminho real da imagem
+      image: 'assets/livros.jpg', 
       route: '/livros'
     },
     {
       title: 'Autores',
       description: 'Gerencie seus autores',
-      image: 'assets/autores.jpg', // Substitua com o caminho real da imagem
+      image: 'assets/autores.jpg',
       route: '/autores'
     },
     {
       title: 'Assuntos',
       description: 'Gerencie seus assuntos',
-      image: 'assets/assuntos.jpg', // Substitua com o caminho real da imagem
+      image: 'assets/assuntos.jpg',
       route: '/assuntos'
+    },
+    {
+      title: 'Relatórios',
+      description: 'Visualize e imprima relatórios',
+      image: 'assets/relatorios.jpg', 
+      route: '/relatorios'
     }
   ];
 

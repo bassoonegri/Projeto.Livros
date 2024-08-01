@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../../services/api.service'; // Caminho para o serviço
-import { Assunto} from '../../models/assunto.model'; // Caminho para o modelo
+import { ApiService } from '../../services/api.service'; // Importe o serviço correto
 
 @Component({
   selector: 'app-assuntos-list',
@@ -8,7 +7,9 @@ import { Assunto} from '../../models/assunto.model'; // Caminho para o modelo
   styleUrls: ['./assuntos-list.component.css']
 })
 export class AssuntosListComponent implements OnInit {
-  assuntos: Assunto[] = [];
+  assuntos: any[] = []; // Substitua `any` pelo tipo correto
+  successMessage: string | null = null;
+  errorMessage: string | null = null;
 
   constructor(private apiService: ApiService) {}
 
@@ -16,27 +17,28 @@ export class AssuntosListComponent implements OnInit {
     this.loadAssuntos();
   }
 
-  loadAssuntos(): void {
-    this.apiService.getAssuntos().subscribe({
-      next: (data: Assunto[]) => {
+  loadAssuntos() {
+    this.apiService.getAssuntos().subscribe(
+      (data) => {
         this.assuntos = data;
       },
-      error: (err) => {
-        console.error('Erro ao carregar assuntos', err);
+      (error) => {
+        this.errorMessage = 'Erro ao carregar os assuntos.';
+        console.error('Erro ao carregar assuntos:', error);
       }
-    });
+    );
   }
 
-  deleteAssunto(codAs: number): void {
-    if (confirm('Tem certeza que deseja excluir este assunto?')) {
-      this.apiService.deleteAssunto(codAs).subscribe({
-        next: () => {
-          this.assuntos = this.assuntos.filter(a => a.codAs !== codAs);
-        },
-        error: (err) => {
-          console.error('Erro ao excluir assunto', err);
-        }
-      });
-    }
+  deleteAssunto(codAs: number) {
+    this.apiService.deleteAssunto(codAs).subscribe(
+      () => {
+        this.successMessage = 'Assunto excluído com sucesso!';
+        this.loadAssuntos(); // Recarregue a lista após exclusão
+      },
+      (error) => {
+        this.errorMessage = 'Erro ao excluir o assunto.';
+        console.error('Erro ao excluir assunto:', error);
+      }
+    );
   }
 }

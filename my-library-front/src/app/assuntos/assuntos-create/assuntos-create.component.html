@@ -1,13 +1,34 @@
-<!-- <div class="container mt-4">
-    <h2>{{ isEdit ? 'Editar Assunto' : 'Criar Novo Assunto' }}</h2>
-    
-    <form #form="ngForm" (ngSubmit)="onSubmit()" class="mt-3">
-      <div class="mb-3">
-        <label for="descricao" class="form-label">Descrição</label>
-        <input type="text" id="descricao" name="descricao" [(ngModel)]="assunto.descricao" class="form-control" required>
-      </div>
-      
-      <button type="submit" class="btn btn-primary">{{ isEdit ? 'Atualizar' : 'Salvar' }}</button>
-    </form>
+<div class="container mt-4">
+  <!-- Botão de Retorno à Listagem de Assuntos -->
+  <div class="mb-3">
+    <a routerLink="/assuntos" class="btn btn-secondary">
+      <i class="bi bi-arrow-left"></i> Voltar para a Listagem de Assuntos
+    </a>
   </div>
-   -->
+  
+  <!-- Título da Página -->
+  <h2 class="mb-4">{{ isEdit ? 'Editar Assunto' : 'Criar Novo Assunto' }}</h2>
+  
+  <!-- Mensagens de Sucesso e Erro -->
+  <div *ngIf="successMessage" class="alert alert-success alert-dismissible fade show" role="alert">
+    {{ successMessage }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <div *ngIf="errorMessage" class="alert alert-danger alert-dismissible fade show" role="alert">
+    {{ errorMessage }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <!-- Formulário de Criação/Edição -->
+  <form #form="ngForm" (ngSubmit)="onSubmit(form)" class="mt-3">
+    <div class="mb-3">
+      <label for="descricao" class="form-label">Descrição</label>
+      <input type="text" id="descricao" name="descricao" [(ngModel)]="assunto.descricao" class="form-control" required>
+    </div>
+    
+    <div class="d-flex justify-content-end">
+      <button type="submit" class="btn btn-primary me-2">{{ isEdit ? 'Atualizar' : 'Salvar' }}</button>
+      
+    </div>
+  </form>
+</div>
