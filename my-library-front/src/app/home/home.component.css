@@ -23,21 +23,26 @@
 .card-img-top {
   border-bottom: 1px solid #ddd;
   border-radius: 0.5rem 0.5rem 0 0;
+  object-fit: cover;
+  height: 200px;
 }
 
 .card-body {
   background-color: #f8f9fa;
   border-radius: 0 0 0.5rem 0.5rem;
+  text-align: center; /* Centraliza o texto */
 }
 
 .card-title {
-  font-size: 1.75rem;
+  font-size: 1.5rem; /* Reduzido para um tamanho moderno */
   font-weight: 600;
-  color: #007bff;
+  color: #343a40; /* Cor escura e moderna */
+  font-family: 'Roboto', sans-serif; /* Fonte moderna e limpa */
+  margin-bottom: 0.75rem; /* Margem inferior mais ajustada */
 }
 
 .card-text {
-  font-size: 1.1rem;
+  font-size: 1rem; /* Ajuste o tamanho da fonte do texto */
   color: #6c757d;
 }
 
