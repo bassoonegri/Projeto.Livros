@@ -16,32 +16,36 @@ public class ContextoBd : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         // Configuração da entidade LivroAutor
-        modelBuilder.Entity<LivroAutor>()
-            .HasKey(la => new { la.LivroCodl, la.AutorCodAu });
+        modelBuilder.Entity<LivroAutor>(entity =>
+        {
+            entity.ToTable("Livro_Autor", "dbo"); // Mapeia para a tabela dbo.Autor
+            entity.HasKey(la => new { la.LivroCodl, la.AutorCodAu });
 
-        modelBuilder.Entity<LivroAutor>()
-            .HasOne(la => la.Livro)
+            entity.HasOne(la => la.Livro)
             .WithMany(l => l.LivroAutores)
             .HasForeignKey(la => la.LivroCodl);
 
-        modelBuilder.Entity<LivroAutor>()
-            .HasOne(la => la.Autor)
+            entity.HasOne(la => la.Autor)
             .WithMany(a => a.LivroAutores)
             .HasForeignKey(la => la.AutorCodAu);
+        });
+
 
         // Configuração da entidade LivroAssunto
-        modelBuilder.Entity<LivroAssunto>()
-            .HasKey(la => new { la.LivroCodl, la.AssuntoCodAs });
+        modelBuilder.Entity<LivroAssunto>(entity =>
+        {
+            entity.ToTable("Livro_Assunto", "dbo"); // Mapeia para a tabela dbo.Autor
+            entity.HasKey(la => new { la.LivroCodl, la.AssuntoCodAs });
 
-        modelBuilder.Entity<LivroAssunto>()
-            .HasOne(la => la.Livro)
+            entity.HasOne(la => la.Livro)
             .WithMany(l => l.LivroAssuntos)
             .HasForeignKey(la => la.LivroCodl);
 
-        modelBuilder.Entity<LivroAssunto>()
-            .HasOne(la => la.Assunto)
+            entity.HasOne(la => la.Assunto)
             .WithMany(a => a.LivroAssuntos)
             .HasForeignKey(la => la.AssuntoCodAs);
+        });
+
 
         // Configuração da entidade Assunto
         modelBuilder.Entity<Assunto>(entity =>

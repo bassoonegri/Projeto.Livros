@@ -116,3 +116,13 @@ D:\Documentos Pessoais\Projetos\Basis\my-library\tests\Projeto.Tests\obj\Debug\n
 D:\Documentos Pessoais\Projetos\Basis\my-library\tests\Projeto.Tests\obj\Debug\net8.0\Projeto.Tests.pdb
 D:\Documentos Pessoais\Projetos\Basis\my-library\tests\Projeto.Tests\obj\Debug\net8.0\Projeto.Tests.genruntimeconfig.cache
 D:\Documentos Pessoais\Projetos\Basis\my-library\tests\Projeto.Tests\obj\Debug\net8.0\ref\Projeto.Tests.dll
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\tests\Projeto.Tests\bin\Debug\net8.0\CoverletSourceRootsMapping_Projeto.Tests
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\tests\Projeto.Tests\obj\Debug\net8.0\Projeto.Tests.csproj.AssemblyReference.cache
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\tests\Projeto.Tests\obj\Debug\net8.0\Projeto.Tests.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\tests\Projeto.Tests\obj\Debug\net8.0\Projeto.Tests.AssemblyInfoInputs.cache
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\tests\Projeto.Tests\obj\Debug\net8.0\Projeto.Tests.AssemblyInfo.cs
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\tests\Projeto.Tests\obj\Debug\net8.0\Projeto.Tests.csproj.CoreCompileInputs.cache
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\tests\Projeto.Tests\obj\Debug\net8.0\Projeto.Tests.sourcelink.json
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\tests\Projeto.Tests\obj\Debug\net8.0\Projeto.Tests.dll
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\tests\Projeto.Tests\obj\Debug\net8.0\refint\Projeto.Tests.dll
+D:\Projetos\Basis\Projeto\Projeto.Livros\my-library\tests\Projeto.Tests\obj\Debug\net8.0\Projeto.Tests.pdb

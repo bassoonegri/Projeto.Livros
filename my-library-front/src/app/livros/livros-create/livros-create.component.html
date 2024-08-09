@@ -41,6 +41,22 @@
         <label for="anoPublicacao" class="form-label">Ano de Publicação</label>
         <input type="text" id="anoPublicacao" name="anoPublicacao" [(ngModel)]="livro.anoPublicacao" class="form-control" placeholder="Digite o ano de publicação" maxlength="4" required>
       </div>
+
+      <div class="col-md-6 mb-3">
+        <label for="autores" class="form-label">Autores</label>
+        <select id="autores" name="autores" class="form-select" [(ngModel)]="selectedAutor" (change)="addAutor()">
+          <option value="">Selecione um autor</option>
+          <option *ngFor="let autor of autores" [value]="autor.codAu">{{ autor.nome }}</option>
+        </select>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <label for="assuntos" class="form-label">Assuntos</label>
+        <select id="assuntos" name="assuntos" class="form-select" [(ngModel)]="selectedAssunto" (change)="addAssunto()">
+          <option value="">Selecione um assunto</option>
+          <option *ngFor="let assunto of assuntos" [value]="assunto.codAs">{{ assunto.descricao }}</option>
+        </select>
+      </div>
     </div>
 
     <button type="submit" class="btn btn-primary">{{ isEdit ? 'Atualizar' : 'Salvar' }}</button>

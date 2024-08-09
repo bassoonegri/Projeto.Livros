@@ -8,6 +8,8 @@ public interface ILivroRepository
 
     Task<Livro> CreateAsync(Livro livro);
 
+    Task<Livro> CreateWithRelationsAsync(Livro livro, CancellationToken cancellationToken);
+
     Task<Livro?> Get(int codigo, CancellationToken cancellationToken);
 
     void Update(Livro livro);

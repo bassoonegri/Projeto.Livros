@@ -8,7 +8,8 @@ import { Livro } from '../models/livro.model';
   styleUrls: ['./livros.component.css']
 })
 export class LivrosComponent implements OnInit {
-  livro: Livro = { codigo: 0, titulo: '', editora: '', edicao: 0, anoPublicacao: '' };
+  livro: Livro = { codigo: 0, titulo: '', editora: '', edicao: 0, anoPublicacao: '',
+                   LivroAssuntos : [],  LivroAutores: []  };
   livros: Livro[] = [];
 
   constructor(private apiService: ApiService) { }
@@ -30,7 +31,7 @@ export class LivrosComponent implements OnInit {
     this.resetForm();
   }
 
-  editLivro(livro: Livro): void {
+  editLivro(livro: Livro): void { 
     this.livro = { ...livro };
   }
 
@@ -39,6 +40,7 @@ export class LivrosComponent implements OnInit {
   }
 
   resetForm(): void {
-    this.livro = { codigo: 0, titulo: '', editora: '', edicao: 0, anoPublicacao: '' };
+    this.livro = { codigo: 0, titulo: '', editora: '', edicao: 0, anoPublicacao: '', 
+                    LivroAssuntos: [],  LivroAutores: [] };
   }
 }

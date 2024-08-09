@@ -20,7 +20,7 @@ public class CreateLivroHandler(IUnitOfWork unitOfWork, ILivroRepository LivroRe
 
             var entity = _mapper.Map<Livro>(request);
 
-            var createdEntity = await _LivroRepository.CreateAsync(entity);
+            var createdEntity = await _LivroRepository.CreateWithRelationsAsync(entity, cancellationToken);
 
             await _unitOfWork.Commit(cancellationToken);
 
@@ -28,8 +28,7 @@ public class CreateLivroHandler(IUnitOfWork unitOfWork, ILivroRepository LivroRe
         }
         catch (Exception ex)
         {
-            // Adicione logging da exceção para depuração
-            throw; // Re-lançar a exceção para tratamento em nível superior
+            throw;
         }
     }
 

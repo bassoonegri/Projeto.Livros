@@ -21,7 +21,9 @@ export class LivrosListComponent implements OnInit {
 
   loadLivros(): void {
     this.livroService.getLivros().subscribe(
-      (livros) => (this.livros = livros),
+      (livros) => {  
+        this.livros = livros
+      },
       (error) => console.error('Erro ao carregar livros', error)
     );
   }
@@ -31,7 +33,7 @@ export class LivrosListComponent implements OnInit {
       this.livroService.deleteLivro(codigo).subscribe(
         () => {
           this.successMessage = 'Livro excluído com sucesso!';
-          this.loadLivros(); // Recarregar a lista de livros
+          this.loadLivros(); 
         },
         (error) => {
           this.errorMessage = 'Erro ao excluir livro';
