@@ -138,11 +138,7 @@ Antes de começar, verifique se você tem os seguintes requisitos instalados:
 1. Faça um fork do repositório.
 2. Crie uma branch para sua modificação.
 3. Faça suas alterações e commit.
-4. Envie um pull request com uma descrição clara do que foi alterado.
-
-## Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
+4. Envie um pull request com uma descrição clara do que foi alterado. 
 
 ---
 
