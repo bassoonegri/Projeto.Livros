@@ -7,8 +7,8 @@ export interface Livro {
     editora: string;
     edicao: number;
     anoPublicacao: string;
-    LivroAutores: LivroAutorModel[];
-    LivroAssuntos: LivroAssuntoModel[];
+    Autores: LivroAutorModel[];
+    Assuntos: LivroAssuntoModel[];
   }
   
   export interface CreateLivroRequest {

@@ -9,7 +9,7 @@ import { Livro } from '../models/livro.model';
 })
 export class LivrosComponent implements OnInit {
   livro: Livro = { codigo: 0, titulo: '', editora: '', edicao: 0, anoPublicacao: '',
-                   LivroAssuntos : [],  LivroAutores: []  };
+                   Assuntos : [],  Autores: []  };
   livros: Livro[] = [];
 
   constructor(private apiService: ApiService) { }
@@ -41,6 +41,6 @@ export class LivrosComponent implements OnInit {
 
   resetForm(): void {
     this.livro = { codigo: 0, titulo: '', editora: '', edicao: 0, anoPublicacao: '', 
-                    LivroAssuntos: [],  LivroAutores: [] };
+                    Assuntos: [],  Autores: [] };
   }
 }

@@ -12,6 +12,9 @@ public class ContextoBd : DbContext
     public DbSet<Assunto> Assuntos { get; set; }
     public DbSet<LivroAutor> LivroAutores { get; set; }
     public DbSet<LivroAssunto> LivroAssuntos { get; set; }
+    public DbSet<LivroValor> LivroValor { get; set; }
+    public DbSet<TipoVenda> TipoVenda { get; set; }
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -90,6 +93,36 @@ public class ContextoBd : DbContext
                 .HasColumnName("AnoPublicacao")
                 .HasMaxLength(4) // Define o comprimento máximo da coluna
                 .IsRequired(); // Define que a coluna é obrigatória
+        });
+
+
+        // Configuração da entidade TipoVenda
+        modelBuilder.Entity<TipoVenda>(entity =>
+        {
+            entity.ToTable("Tipo_Venda", "dbo"); // Mapeia para a tabela dbo.TipoVenda
+            entity.HasKey(e => e.CodTv); // Define CodTv como a chave primária
+            entity.Property(e => e.Descricao);
+        });
+
+        // Configuração da entidade LivroValor
+        modelBuilder.Entity<LivroValor>(entity =>
+        {
+            entity.ToTable("Livro_Valor", "dbo"); // Mapeia para a tabela dbo.Livro_Valor
+
+            // Configura a chave primária composta
+            entity.HasKey(e => new { e.TipoVendaCodTv, e.LivroCodl });
+
+            // Configura a relação com TipoVenda
+            entity.HasOne(e => e.TipoVenda)
+                .WithMany()  
+                .HasForeignKey(e => e.TipoVendaCodTv)
+                .OnDelete(DeleteBehavior.Restrict);  
+
+            // Configura a relação com Livro
+            entity.HasOne(e => e.Livro)
+                .WithMany() 
+                .HasForeignKey(e => e.LivroCodl)
+                .OnDelete(DeleteBehavior.Restrict);  
         });
 
     }

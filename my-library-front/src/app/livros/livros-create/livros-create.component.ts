@@ -20,8 +20,8 @@ export class LivrosCreateComponent implements OnInit {
     editora: '',
     edicao: 0,
     anoPublicacao: '',
-    LivroAutores: [],
-    LivroAssuntos: []
+    Autores: [],
+    Assuntos: []
   };
 
   autores: Autor[] = [];
@@ -61,12 +61,12 @@ export class LivrosCreateComponent implements OnInit {
   }
   
   setSelectedAutores(): void {
-    console.log(this.livro.LivroAssuntos);
-    this.selectedAutor = this.livro.LivroAutores.length > 0 ? this.livro.LivroAutores[0].autorCodAu : null;
+    console.log(this.livro.Autores);
+    this.selectedAutor = this.livro.Autores.length > 0 ? this.livro.Autores[0].autorCodAu : null;
   }
   
   setSelectedAssuntos(): void {
-    this.selectedAssunto = this.livro.LivroAssuntos.length > 0 ? this.livro.LivroAssuntos[0].assuntoCodAs : null;
+    this.selectedAssunto = this.livro.Assuntos.length > 0 ? this.livro.Assuntos[0].assuntoCodAs : null;
   }
   
 
@@ -86,27 +86,28 @@ export class LivrosCreateComponent implements OnInit {
 
   addAutor(): void {
     const autor = this.autores.find(a => a.codAu === this.selectedAutor);
-    if (autor && !this.livro.LivroAutores.some(a => a.autorCodAu === autor.codAu)) {
-      this.livro.LivroAutores.push({ livroCodl: this.livro.codigo, autorCodAu: autor.codAu, autor: autor });
+    if (autor && !this.livro.Autores.some(a => a.autorCodAu === autor.codAu)) {
+      this.livro.Autores.push({ livroCodl: this.livro.codigo, autorCodAu: autor.codAu, autor: autor });
     }
   }
   
   addAssunto(): void {
     const assunto = this.assuntos.find(a => a.codAs === this.selectedAssunto);
-    if (assunto && !this.livro.LivroAssuntos.some(a => a.assuntoCodAs === assunto.codAs)) {
-      this.livro.LivroAssuntos.push({ livroCodl: this.livro.codigo, assuntoCodAs: assunto.codAs, assunto: assunto });
+    if (assunto && !this.livro.Assuntos.some(a => a.assuntoCodAs === assunto.codAs)) {
+      this.livro.Assuntos.push({ livroCodl: this.livro.codigo, assuntoCodAs: assunto.codAs, assunto: assunto });
     }
   }  
 
   removeAutor(autor: LivroAutorModel): void {
-    this.livro.LivroAutores = this.livro.LivroAutores.filter(a => a.autorCodAu !== autor.autorCodAu);
+    this.livro.Autores = this.livro.Autores.filter(a => a.autorCodAu !== autor.autorCodAu);
   } 
 
   removeAssunto(assunto: LivroAssuntoModel): void {
-    this.livro.LivroAssuntos = this.livro.LivroAssuntos.filter(a => a.assuntoCodAs !== assunto.assuntoCodAs);
+    this.livro.Assuntos = this.livro.Assuntos.filter(a => a.assuntoCodAs !== assunto.assuntoCodAs);
   }
 
   onSubmit(form: NgForm): void {
+    console.log(this.livro);
     if (this.isEdit) {
       this.livroService.updateLivro(this.livro).subscribe(
         () => {

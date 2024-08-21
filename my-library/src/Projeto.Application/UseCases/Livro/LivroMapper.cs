@@ -5,9 +5,9 @@ using Projeto.Domain.Entities;
 
 namespace Projeto.Application.UseCases.Livros;
 
-public class LivroMapper : Profile
+public class LivroValorMapper : Profile
 {
-    public LivroMapper()
+    public LivroValorMapper()
     {
         // Mapeia de CreateLivroRequest para Livro
         CreateMap<CreateLivroRequest, Livro>()

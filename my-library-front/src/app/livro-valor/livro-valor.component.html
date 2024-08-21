@@ -1,0 +1,32 @@
+<div class="container mt-4">
+  <h1 class="page-title text-center mb-4">Valores dos Livros</h1>
+  
+  <div class="mb-3 text-end">
+    <a routerLink="/livro-valor/create" class="btn btn-primary">
+      <i class="fas fa-plus"></i> Adicionar Novo Valor
+    </a>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let item of livroValores">
+      <div class="card shadow-sm">
+        <div class="card-header d-flex align-items-center">
+          <img src="assets/book-icon.png" alt="Ícone do Livro" class="card-icon me-3">
+          <h3 class="card-title mb-0">{{ item.livroTitulo }}</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Tipo de Venda: <strong>{{ item.tipoVendaDescricao }}</strong></p>
+          <p class="card-text">Valor: <strong class="text-success">R$ {{ item.valor | number:'1.2-2' }}</strong></p>
+        </div>
+        <div class="card-footer bg-light text-muted d-flex justify-content-between">
+          <button (click)="editLivroValor(item)" class="btn btn-edit btn-sm">
+            <i class="fas fa-edit"></i> Editar
+          </button>
+          <button (click)="deleteLivroValor(item)" class="btn btn-delete btn-sm">
+            <i class="fas fa-trash"></i> Excluir
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

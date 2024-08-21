@@ -4,6 +4,9 @@ import { Observable } from 'rxjs';
 import { Livro } from '../models/livro.model';
 import { Autor } from '../models/autor.model';
 import { Assunto } from '../models/assunto.model';
+import { LivroValor } from '../models/livroValor.model';
+import { TipoVenda } from '../models/tipoVenda.model';
+import { LivroValorResponse } from '../models/livroValorResponse.model';
 
 @Injectable({
   providedIn: 'root'
@@ -74,5 +77,33 @@ export class ApiService {
 
   deleteAssunto(id: number): Observable<void> {
     return this.http.delete<void>(`${this.baseUrl}/assunto/${id}`);
+  }
+
+  // LivroValor
+  getAllLivroValor(): Observable<LivroValorResponse[]> {
+    return this.http.get<LivroValorResponse[]>(`${this.baseUrl}/livrovalor`);
+  }
+
+  getLivroValor(id: number, tipo: number): Observable<LivroValor> {
+    return this.http.get<LivroValor>(`${this.baseUrl}/livrovalor/${id}/${tipo}`);
+  } 
+
+  createLivroValor(livroValor: LivroValor): Observable<LivroValor> {
+    
+    return this.http.post<LivroValor>(`${this.baseUrl}/livrovalor`, livroValor); 
+  }
+
+  updateLivroValor( livroValor: LivroValor): Observable<LivroValor> {
+    return this.http.put<LivroValor>(`${this.baseUrl}/livrovalor`, livroValor);
+  }
+
+  deleteLivroValor(id: number, tipo: number): Observable<void> {
+    return this.http.delete<void>(`${this.baseUrl}/livrovalor/${id}/${tipo}`);
+  }
+
+  // TipoVenda
+
+  getTiposVenda(): Observable<TipoVenda[]> {
+    return this.http.get<TipoVenda[]>(`${this.baseUrl}/tipovenda`);
   }
 }

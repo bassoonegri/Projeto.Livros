@@ -15,7 +15,11 @@ import { AutoresListComponent } from './autores/autores-list/autores-list.compon
 import { LivrosListComponent } from './livros/livros-list/livros-list.component';
 import { LivrosCreateComponent } from './livros/livros-create/livros-create.component';
 import { LivrosRelatorioComponent } from './reports/livros-relatorio/livros-relatorio.component';
-import { FooterComponent } from './footer/footer.component'; 
+import { FooterComponent } from './footer/footer.component';
+import { LivroValorComponent } from './livro-valor/livro-valor.component'; 
+import { LivroValorCreateComponent } from './livro-valor/livro-valor-create/livro-valor-create.component';
+import { LivroValorEditComponent } from './livro-valor/livro-valor-edit/livro-valor-edit.component';
+import { CurrencyMaskModule } from 'ng2-currency-mask';
 
 
 const routes: Routes = [
@@ -32,6 +36,11 @@ const routes: Routes = [
   { path: 'assuntos', component: AssuntosListComponent },
   { path: 'assuntos/create', component: AssuntosCreateComponent },
   { path: 'assuntos/edit/:id', component: AssuntosCreateComponent },
+  
+  { path: 'livro-valor', component: LivroValorComponent },
+  { path: 'livro-valor/create', component: LivroValorCreateComponent },
+  { path: 'livro-valor/edit/:livroCodl/:tipoVendaCodTv', component: LivroValorEditComponent },
+ 
 
   { path: 'relatorios', component: LivrosRelatorioComponent },
 ];
@@ -47,18 +56,23 @@ const routes: Routes = [
 
     AssuntosComponent,
     AssuntosListComponent,
-    AssuntosCreateComponent,
+    AssuntosCreateComponent,    
+    
+    LivroValorComponent,
+    LivroValorCreateComponent,
+    LivroValorEditComponent,
 
     LivrosComponent,
     LivrosListComponent,
     LivrosCreateComponent,
     LivrosRelatorioComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule, 
+    CurrencyMaskModule,
     RouterModule.forRoot(routes) // Configuração das rotas
   ],
   providers: [],

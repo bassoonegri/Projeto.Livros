@@ -19,6 +19,8 @@ public static class ServiceExtensions
         services.AddScoped<ILivroRepository, LivroRepository>();
         services.AddScoped<IAssuntoRepository, AssuntoRepository>();
         services.AddScoped<IAutorRepository, AutorRepository>();
+        services.AddScoped<ILivroValorRepository, LivroValorRepository>();
+        services.AddScoped<ITipoVendaRepository, TipoVendaRepository>();
     }
 }
 

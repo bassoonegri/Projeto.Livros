@@ -27,6 +27,12 @@ export class HomeComponent {
       route: '/assuntos'
     },
     {
+      title: 'Valor dos Livros',
+      description: 'Gerencie os valores dos livros',
+      image: 'assets/valor-dos-livros.jpg',  
+      route: '/livro-valor'  
+    },
+    {
       title: 'Relatórios',
       description: 'Visualize e imprima relatórios',
       image: 'assets/relatorios.jpg', 

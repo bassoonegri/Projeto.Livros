@@ -1,0 +1,114 @@
+.page-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  padding: 0.75rem;
+  border-bottom: 1px solid #ddd;
+  background-color: #f7f7f7; /* Cor mais suave para o cabeçalho */
+}
+
+.card-icon {
+  border-radius: 50%;
+  height: 50px; /* Tamanho do ícone reduzido */
+  width: 50px;  /* Tamanho do ícone reduzido */
+  object-fit: cover;
+  border: 2px solid #007bff; /* Borda ao redor do ícone para destacá-lo */
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem; /* Tamanho do título ajustado */
+  font-weight: 600;
+  color: #333; /* Cor do título */
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.card-footer {
+  padding: 0.75rem;
+  border-top: 1px solid #ddd;
+}
+
+/* Botões */
+.btn {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn i {
+  margin-right: 0.5rem; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Botão primário (Adicionar Novo Valor) */
+.btn-primary {
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  border: 1px solid #007bff;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #0056b3, #003d7a);
+  border-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão de edição */
+.btn-edit {
+  background: linear-gradient(45deg, #17a2b8, #117a8b);
+  border: 1px solid #17a2b8;
+}
+
+.btn-edit:hover {
+  background: linear-gradient(45deg, #117a8b, #0a6b6b);
+  border-color: #117a8b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão de exclusão */
+.btn-delete {
+  background: linear-gradient(45deg, #dc3545, #c82333);
+  border: 1px solid #dc3545;
+}
+
+.btn-delete:hover {
+  background: linear-gradient(45deg, #c82333, #a71d2a);
+  border-color: #c82333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Cores de texto */
+.text-success {
+  color: #28a745;
+}

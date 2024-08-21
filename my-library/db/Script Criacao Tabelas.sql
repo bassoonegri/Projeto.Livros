@@ -4,6 +4,8 @@ IF OBJECT_ID('dbo.Livro_Assunto', 'U') IS NOT NULL DROP TABLE dbo.Livro_Assunto;
 IF OBJECT_ID('dbo.Livro', 'U') IS NOT NULL DROP TABLE dbo.Livro;
 IF OBJECT_ID('dbo.Autor', 'U') IS NOT NULL DROP TABLE dbo.Autor;
 IF OBJECT_ID('dbo.Assunto', 'U') IS NOT NULL DROP TABLE dbo.Assunto;
+IF OBJECT_ID('dbo.Livro_Valor', 'U') IS NOT NULL DROP TABLE dbo.Livro_Valor;
+IF OBJECT_ID('dbo.Tipo_Venda', 'U') IS NOT NULL DROP TABLE dbo.Tipo_Venda;
 
 -- Recriar tabelas com tamanhos corrigidos
 
@@ -45,3 +47,17 @@ CREATE TABLE dbo.Livro_Assunto (
     FOREIGN KEY (Livro_Codl) REFERENCES dbo.Livro(Codl) ON DELETE CASCADE,
     FOREIGN KEY (Assunto_codAs) REFERENCES dbo.Assunto(codAs) ON DELETE CASCADE
 );
+
+-- Criação da Tabela de Tipo Venda
+CREATE TABLE dbo.Tipo_Venda (
+    CodTv INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+    Descricao VARCHAR(50) NOT NULL   -- Aumentar o tamanho para comportar descrições maiores
+);
+
+CREATE TABLE dbo.Livro_Valor (
+	TipoVenda_CodTv INT, 
+	Livro_Codl INT, 
+	Valor DECIMAL,	
+    FOREIGN KEY (Livro_Codl) REFERENCES dbo.Livro(Codl),
+    FOREIGN KEY (TipoVenda_CodTv) REFERENCES dbo.Tipo_Venda(CodTv) 
+)

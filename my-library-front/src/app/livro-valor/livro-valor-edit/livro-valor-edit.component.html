@@ -1,0 +1,30 @@
+<div class="container mt-5">
+  <h1 class="page-title text-center mb-4">Editar Valor</h1>
+  <form (ngSubmit)="onSubmit()" #livroValorForm="ngForm" class="p-4 border rounded shadow-sm bg-light">
+    <div class="mb-4">
+      <label for="livroCodl" class="form-label">Livro</label>
+      <select id="livroCodl" name="livroCodl" class="form-select" [(ngModel)]="livroValor.livroCodl" required>
+        <option *ngFor="let livro of livros" [value]="livro.codigo">
+          {{ livro.titulo }}
+        </option>
+      </select>
+    </div>
+    <div class="mb-4">
+      <label for="tipoVendaCodTv" class="form-label">Tipo de Venda</label>
+      <select id="tipoVendaCodTv" name="tipoVendaCodTv" class="form-select" [(ngModel)]="livroValor.tipoVendaCodTv" required>
+        <option *ngFor="let tipoVenda of tiposVenda" [value]="tipoVenda.codTv">
+          {{ tipoVenda.descricao }}
+        </option>
+      </select>
+    </div>
+    <div class="mb-4">
+      <label for="valor" class="form-label">Valor</label>
+      <input type="text" id="valor" name="valor" class="form-control" [(ngModel)]="livroValor.valor" required
+        currencyMask [options]="{ prefix: 'R$', thousands: '.', decimal: ',', align: 'right', allowNegative: false }" placeholder="0,00">
+    </div>
+    <div class="text-end">
+      <button type="submit" class="btn btn-primary">Salvar</button>
+      <a routerLink="/livro-valor" class="btn btn-secondary">Cancelar</a>
+    </div>
+  </form>
+</div>
